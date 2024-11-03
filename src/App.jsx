@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
+          GitHub Codespaces <span className="heart">♥️</span> Hiabed
         </p>
         <p className="small">
           Edit <code>src/App.jsx</code> and save to reload.
@@ -13,11 +13,11 @@ function App() {
         <p>
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            1337 school
           </a>
         </p>
       </header>
