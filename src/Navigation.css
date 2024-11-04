@@ -6,19 +6,24 @@
     align-items: center;
 }
 
-#items {
+#items { /* parent home shop ....*/
+    /* border: 1px solid black; */
+    margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 80%;
+    width: 40%;
     list-style: none;
     color: black;
 }
 
-#logo-parent {
+#logo-parent { /* parent logo */
     display: flex;
     align-items: center;
     gap: 20px;
+    width: 15%;
+    /* border: 1px solid black; */
+    margin-left: 54px;
 }
 
 #logo-parent h1 {
@@ -33,9 +38,25 @@
 #logo {
     width: 50px;
     height: 32px;
-    background-color: black;
+    /* background-color: black; */
 }
 
 a {
     text-decoration: none;
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#icons { /* parent profile .... */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    gap: 35px;
+    /* border: 1px solid black; */
+    width: 20%;
 }
