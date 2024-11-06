@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 #main-nav {
     width: 1440px;
     height: 100px;
@@ -20,7 +25,7 @@
 #logo-parent { /* parent logo */
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     width: 15%;
     /* border: 1px solid black; */
     margin-left: 54px;
@@ -28,7 +33,7 @@
 
 #logo-parent h1 {
     color: #000;
-    font-family: Montserrat;
+    font-family: sans-serif;
     font-size: 34px;
     font-style: normal;
     font-weight: 700;
