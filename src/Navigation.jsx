@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Navigation = () => {
     return (
         <>
@@ -8,10 +10,10 @@ const Navigation = () => {
                         <h1>Furniro</h1>
                     </div>
                     <ul id="items">
-                        <li><a href="#home">Home</a></li>    
-                        <li><a href="#shop">Shop</a></li>    
-                        <li><a href="#about">About</a></li>    
-                        <li><a href="#contact">Contact</a></li>
+                        <NavLink to="/home">Home</NavLink>
+                        <NavLink to="/shop">Shop</NavLink>
+                        <NavLink to="/about">About</NavLink>
+                        <NavLink to="/contact">Contact</NavLink>
                     </ul>
                     <div id="icons">
                         <img className="icon" src="/profile-icon.svg" alt="profile" />
