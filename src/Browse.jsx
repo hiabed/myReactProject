@@ -1,4 +1,6 @@
 import "./Browse.css"
+// import { useState } from 'react';
+// import ClipLoader from "react-spinners/ClipLoader";
 
 const browseObj = [
     {
@@ -24,7 +26,9 @@ const Browse = () => {
             </div>
             <div id="browse-imgs">
                 {
-                    browseObj.map(element => <img className="browse-img" key={element.title} src={element.img} alt={element.title}/>)
+                    browseObj.map((element) => {
+                        return <img className="browse-img" key={element.title} src={element.img} alt={element.title}/>;
+                    })
                 }
             </div>
         </>
