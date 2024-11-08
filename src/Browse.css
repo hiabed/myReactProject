@@ -5,3 +5,15 @@
     align-items: center;
     gap: 10px;
 }
+
+#browse-imgs {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 62.29px;
+}
+
+.browse-img {
+    width: 381px;
+    height: 480px;
+}
