@@ -1,3 +1,5 @@
+import "./ShowMore.css";
+
 const borderStyle = {
     width: "245px",
     height: "48px",
@@ -8,6 +10,10 @@ const borderStyle = {
     margin: "32px auto 0",
 }
 
+const hoverStyle = {
+    backgroundColor: "#B88E2F",
+}
+
 const showStyle = {
     color: "#B88E2F",
     fontFamily: "Poppins",
@@ -16,8 +22,8 @@ const showStyle = {
 
 const ShowMore = () => {
     return (
-        <div style={borderStyle}>
-            <h1 style={showStyle}>Show More</h1>
+        <div id="more" style={borderStyle} onMouseEnter={hoverStyle}>
+            <h1 id="more-text" style={showStyle}>Show More</h1>
         </div>
     );
 }

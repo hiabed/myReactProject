@@ -1,0 +1,8 @@
+#more:hover {
+    background-color: #B88E2F;
+}
+
+#more:hover h1 {
+    color: white !important;
+    cursor: default;
+}
