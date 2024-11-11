@@ -15,7 +15,7 @@ const Main = () => {
                     <div>
                         <p id='new-para'>New Arrival</p>
                         <h1 id='title'>Discover Our<br />New Collection</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut<br />elit tellus, luctus nec ullamcorper mattis.</p>
+                        <p id="lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut<br />elit tellus, luctus nec ullamcorper mattis.</p>
                         <button id='buy-now'>BUY NOW</button>
                     </div>
                 </div> : 

@@ -9,6 +9,13 @@
     width: 100%;
 }
 
+#lorem-text {
+    color: var(--Font-Color1, #666);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+}
+
 #new-arrival {
     position: absolute;
     right: 58px;
@@ -51,11 +58,9 @@
 #new-para {
     color: #333;
     font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 133.333% */
+    font-size: 16px;
     margin-bottom: 4px;
+    letter-spacing: 3px;
 }
 
 .loader {
