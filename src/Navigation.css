@@ -11,8 +11,7 @@
     align-items: center;
 }
 
-#items { /* parent home shop ....*/
-    /* border: 1px solid black; */
+#items {
     margin: auto;
     display: flex;
     justify-content: space-around;
