@@ -1,7 +1,6 @@
 const styleObj = {
     width: "285px",
     height: "446px",
-    // border: "1px solid black",
     display: "flex",
     flexDirection: "column",
     gap: "8px",
@@ -10,6 +9,7 @@ const styleObj = {
 
 const priceStyle = {
     display: "flex",
+    color: "#3A3A3A",
     gap: "16px",
     marginLeft: "16px",
     fontFamily: "Poppins",
@@ -20,6 +20,7 @@ const priceStyle = {
 }
 
 const h3Style = {
+    color: "#3A3A3A",
     marginLeft: "16px",
     marginTop: "16px",
     fontFamily: "Poppins",
@@ -31,6 +32,8 @@ const pStyle = {
     fontFamily: "Poppins",
     fontSize: "16px",
     fontWeight: "500",
+    marginLeft: "16px",
+    color: "#898989",
 }
 
 const oldPriceStyle = {
@@ -49,7 +52,7 @@ const Product = (props) => {
         <div style={styleObj}>
             <img src={img} alt={img} />
             <h3 style={h3Style}>{title}</h3>
-            <p style={{marginLeft: "16px"}}>{description}</p>
+            <p style={pStyle}>{description}</p>
             <div style={priceStyle}>
                 <h3>{price}</h3>
                 <p style={oldPriceStyle}>{oldPrice}</p>
