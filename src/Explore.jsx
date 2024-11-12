@@ -29,6 +29,21 @@ const pStyle = {
     marginTop: "7px",
 }
 
+const buttonStyle = {
+    border: "none",
+    width: "176px",
+    height: "48px",
+    backgroundColor: '#B88E2F',
+    cursor: "pointer",
+    color: "#FFF",
+    fontFamily: "Poppins",
+    fontSize: "16px",
+    fontStyle: "normal",
+    fontWeight: "600",
+    lineHeight: "150%",
+    marginTop: "25px",
+};
+
 const Explore = () => {
     return (
         <div style={exploreStyle} id="explore">
