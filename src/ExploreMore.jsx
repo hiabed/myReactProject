@@ -1,3 +1,5 @@
+import Explore from './Explore';
+
 const parentStyle = {
     display: "flex",
     width: "1440px",
@@ -111,12 +113,7 @@ const carouselParent = {
 const ExploreMore = () => {
     return (
         <div style={parentStyle}>
-            <div style={exploreStyle} id="explore">
-                <h2 style={h2Style}>50+ Beautiful rooms inspiration</h2>
-                <p style={pStyle}>Our designer already made a lot of
-                     beautiful prototipe of rooms that inspire you</p>
-                <button style={buttonStyle}>Explore More</button>
-            </div>
+            <Explore />
             <div style={innerPeaceStyle} id="inner-peace">
                 <div style={{position: "relative"}}>
                     <img style={imgStyle} src="innerPeace.svg" alt="Inner Peace" />
