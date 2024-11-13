@@ -32,9 +32,9 @@ const ExploreMore = () => {
                     interval={5000}
                 >
                     <img src="image 1.svg" alt="chairs image 1" />
-                    <img src="image 2.svg" alt="chairs image 2" />
-                    <img src="image 3.svg" alt="chairs image 3" />
-                    <img src="image 4.svg" alt="chairs image 4" />
+                    <img src="image 1.svg" alt="chairs image 2" />
+                    <img src="image 1.svg" alt="chairs image 3" />
+                    <img src="image 1.svg" alt="chairs image 4" />
                 </Carousel>
             </div>
         </div>

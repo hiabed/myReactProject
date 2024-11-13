@@ -3,6 +3,20 @@
     flex-direction: column;
 }
 
+.carousel .slider-wrapper {
+    height: 530px;
+}
+
+.carousel .control-next.control-arrow {
+    color: yellow; /* color not change anything */
+    background-color: rgb(184, 142, 47);
+    opacity: 0.8;
+}
+
+.carousel .control-next.control-arrow:hover {
+    background-color: rgb(184, 151, 75);
+}
+
 .carousel.carousel-slider .control-arrow {
     width: 48px;
     height: 48px;
