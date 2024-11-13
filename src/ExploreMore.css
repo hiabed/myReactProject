@@ -10,6 +10,10 @@
     top: 6px;
 }
 
+.control-prev {
+    display: none;
+}
+
 .carousel .control-dots .dot {
     background-color: #D8D8D8;
     box-shadow: none;
