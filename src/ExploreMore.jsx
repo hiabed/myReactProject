@@ -20,11 +20,29 @@ const innerPeaceStyle = {
 
 // (clickHandler: () => void, hasNext: boolean, label: string) =>
 
-const handleNext = (clickHandler, hasNext, label) => 
+const nextButtonStyle = {
+    fontSize: 20,
+    borderRadius: "50%",
+    width: 48,
+    height: 48,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    position: "absolute",
+    backgroundColor: "white",
+    right: 85,
+    fill: "#FFF",
+    filter: "drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.16))",
+    top: "267px",
+}
+
+const handleNext = (clickHandler) => 
 {
     return (
-        <div onClick={clickHandler} style={{fontSize: 30, position: 'absolute', backgroundColor: 'rgba(20, 20, 20, 1)', padding: 20}}>
-            {">"}
+        <div onClick={clickHandler} style={nextButtonStyle}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.00006 5L16.0001 12L9.00006 19" stroke="#B88E2F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
     )
 }
@@ -40,13 +58,13 @@ const ExploreMore = () => {
                     showThumbs={false}
                     infiniteLoop={true}
                     autoPlay={true}
-                    interval={5000}
-                    //renderArrowNext={handleNext}
+                    interval={3000}
+                    renderArrowNext={handleNext}
                 >
                     {
                         [1, 2, 3, 4].map((el, i) => (
                             <div key={i} style={{height: 600, marginRight: 24}}>
-                                <img style={{ height: 600, border: "1px solid black"}} src={`Rectangle 25.svg`} alt={`chairs image ${i}`} />
+                                <img style={{ height: 486}} src={`Rectangle 25.svg`} alt={`chairs image ${i}`} />
                             </div>
                         ))
                     }
