@@ -3,6 +3,14 @@
     flex-direction: column;
 }
 
+.carousel.carousel-slider .control-arrow {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+}
+
 .carousel .control-dots {
     order: 2;
     position: relative;
