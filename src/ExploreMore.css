@@ -1,0 +1,24 @@
+.carousel.carousel-slider {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel .control-dots {
+    order: 2;
+    position: relative;
+    text-align: start;
+    top: 6px;
+}
+
+.carousel .control-dots .dot {
+    background-color: #D8D8D8;
+    box-shadow: none;
+    width: 11px;
+    height: 11px;
+}
+
+.carousel .control-dots .dot.selected {
+    background-color: #B88E2F;
+    outline: 1px solid #B88E2F;
+    outline-offset: 6px;
+}

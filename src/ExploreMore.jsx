@@ -1,11 +1,13 @@
 import Explore from './Explore';
 import InnerPeace from './InnerPeace';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import './ExploreMore.css';
 
 const parentStyle = {
     display: "flex",
     width: "1440px",
     height: "670px",
-    // border: "1px solid black",
     marginTop: "69px",
     backgroundColor: "#FCF8F3",
     alignItems: "center",
@@ -14,11 +16,7 @@ const parentStyle = {
 const innerPeaceStyle = {
     display: "flex",
     gap: "24px",
-}
-
-const carouselParent = {
-    border: "1px solid black",
-}
+};
 
 const ExploreMore = () => {
     return (
@@ -26,9 +24,18 @@ const ExploreMore = () => {
             <Explore />
             <div style={innerPeaceStyle} id="inner-peace">
                 <InnerPeace />
-                <div style={carouselParent}>
-                    <img src="Rectangle 25.svg" alt="chairs image" />
-                </div>
+                <Carousel
+                    showArrows={true}
+                    showThumbs={false}
+                    infiniteLoop={true}
+                    autoPlay={true}
+                    interval={5000}
+                >
+                    <img src="image 1.svg" alt="chairs image 1" />
+                    <img src="image 2.svg" alt="chairs image 2" />
+                    <img src="image 3.svg" alt="chairs image 3" />
+                    <img src="image 4.svg" alt="chairs image 4" />
+                </Carousel>
             </div>
         </div>
     );
