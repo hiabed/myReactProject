@@ -8,9 +8,9 @@
 }
 
 .carousel .control-next.control-arrow {
-    color: yellow; /* color not change anything */
     background-color: rgb(184, 142, 47);
     opacity: 0.8;
+
 }
 
 .carousel .control-next.control-arrow:hover {
@@ -23,6 +23,7 @@
     border-radius: 50%;
     position: absolute;
     top: 45%;
+    right: 95px;
 }
 
 .carousel .control-dots {
@@ -48,3 +49,11 @@
     outline: 1px solid #B88E2F;
     outline-offset: 6px;
 }
+
+.carousel .control-next.control-arrow::before {
+    border-left: 8px solid rgb(160, 109, 147) !important;
+}
+
+ul.slider.animated {
+    width: 80% !important;
+  }

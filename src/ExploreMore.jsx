@@ -18,6 +18,17 @@ const innerPeaceStyle = {
     gap: "24px",
 };
 
+// (clickHandler: () => void, hasNext: boolean, label: string) =>
+
+const handleNext = (clickHandler, hasNext, label) => 
+{
+    return (
+        <div onClick={clickHandler} style={{fontSize: 30, position: 'absolute', backgroundColor: 'rgba(20, 20, 20, 1)', padding: 20}}>
+            {">"}
+        </div>
+    )
+}
+
 const ExploreMore = () => {
     return (
         <div style={parentStyle}>
@@ -30,11 +41,15 @@ const ExploreMore = () => {
                     infiniteLoop={true}
                     autoPlay={true}
                     interval={5000}
+                    //renderArrowNext={handleNext}
                 >
-                    <img src="image 1.svg" alt="chairs image 1" />
-                    <img src="image 1.svg" alt="chairs image 2" />
-                    <img src="image 1.svg" alt="chairs image 3" />
-                    <img src="image 1.svg" alt="chairs image 4" />
+                    {
+                        [1, 2, 3, 4].map((el, i) => (
+                            <div key={i} style={{height: 600, marginRight: 24}}>
+                                <img style={{ height: 600, border: "1px solid black"}} src={`Rectangle 25.svg`} alt={`chairs image ${i}`} />
+                            </div>
+                        ))
+                    }
                 </Carousel>
             </div>
         </div>
